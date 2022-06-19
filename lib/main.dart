@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx/getx/statemanagement/reactivestatemanagement.dart';
+import 'package:getx/getx/statemanagement/simplestate.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home:  ReactiveStateManagement(),
+      home:  SimpleState(),
     );
   }
 }
