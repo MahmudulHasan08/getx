@@ -11,17 +11,17 @@ class MyController extends GetxController{
  //      val!.name=val.name.toString().toUpperCase();
  //    });
  //  }
-  RxInt count=0.obs;
-  incrementFunc(){
-    count++;
-  }
+ //  RxInt count=0.obs;
+ //  incrementFunc(){
+ //    count++;
+ //  }
 
 
-   // var count =0;
-   // incrementFunc(){
-   //   count++;
-   //   update();
-   // }
+   var count =0;
+   incrementFunc(){
+     count++;
+     update();
+   }
 
 
 }

@@ -16,12 +16,8 @@ class SimpleState extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            GetBuilder<MyController>(
-               // init: MyController(),
-                builder: (controller){
-                return Text("SimpleState increment ${myController.count}");
-
-
+            GetBuilder<MyController>(builder: (builder){
+              return Text("Simple State ${builder.count}");
             }),
             // Obx(
             //   () => Text("SimpleState increment ${myController.count}"),
@@ -32,7 +28,8 @@ class SimpleState extends StatelessWidget {
             RaisedButton(
               child: Text("Increment"),
               onPressed: () {
-                myController.incrementFunc();
+                // myController.incrementFunc();
+                Get.find<MyController>().incrementFunc();
                 print("its working");
               }
             )
